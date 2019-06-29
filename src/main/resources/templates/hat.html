@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GIS</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel='stylesheet' type='text/css' href='/static/map/ol/3.7/ol.css' />
+    <link rel="stylesheet" href="//res.layui.com/layui/dist/css/layui.css"  media="all">
+    <link rel="stylesheet" type="text/css" href="/static/css/map.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/toolbox.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/ol3-layerswitcher.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <script type="text/javascript" src="/static/map/ol/3.7/ol-debug.js"></script>
+    <script type="text/javascript" src="/static/js/map/prototype.js"></script>
+    <script type="text/javascript" src="/static/map/ol/jquery-1.9.1.min.js"></script>
+    <script type=text/javascript src='/static/lib/mqtt/mqttws31.js'></script>
+    <script type="text/javascript" src="/static/map/js/ssmap.config.js"></script>
+    <script type="text/javascript" src="/static/map/js/ssmap.apiD.js"></script>
+    <script type="text/javascript" src="/static/map/js/ssmap.markerlabel.js"></script>
+    <script type="text/javascript" src="/static/js/map/toolbox.js"></script>
+    <script type="text/javascript" src="/static/js/map/ol3-layerswitcher.js"></script>
+    <script type="text/javascript" src="/static/lib/jquery.min.js" charset="utf-8"></script>
+    <script type=text/javascript src='/static/lib/mqtt/mqttws31.js'></script>
+    <script type=text/javascript src='/static/lib/webSocket.js'></script>
+    <script type="text/javascript" src="/static/js/hat.js"></script>
+
+</head>
+
+<body>
+<div id="weadmin-body">
+
+    <div id="rightMap" class="rightMapCss">
+        <div style="position: absolute;bottom: 20px;z-index: 999;background: #ff9831;">
+            <div id="showxy" class="infoCss" style="margin-left: 80px"></div>
+            <div id="info" class="infoCss infoCss2"></div>
+            <!--<h3>经度：<span id="longitude" class="main"></span></h3>
+            <h3>纬度：<span id="latitude" class="main"></span></h3>-->
+            <!--<div id="mapToolBar" class="mapToolBarCss">
+            </div>-->
+        </div>
+        <div  class="btn-wrap">
+            <div id="xxx" class="btn-item">
+                <p id="xx">5个</p>
+                <p>项目在场班组数</p>
+            </div>
+        </div>
+
+
+        <div id="mapBox" class="mapBoxCss ol-map">
+            <!--<div class="ol-compass"><img id='mapCompass'/></div>-->
+            <div id='toolBox' class="ol-toolbox-panel ol-hidden"></div>
+        </div>
+
+    </div>
+
+</div>
+<!-- 右侧主体结束 -->
+<!-- 中部结束 -->
+<!-- 底部开始 -->
+
+<script th:inline="javascript">
+    //var projId = [[${projId}]];
+    var hostName = [[${hostName}]];
+    var mqttClientId = [[${mqttClientId}]];
+    var mqttPort = [[${mqttPort}]];
+    var projTopic = [[${projTopic}]];
+    var apc3 = [[${siteMap}]];
+
+    console.log("hostName:"+hostName)
+    console.log("mqttClientId:"+mqttClientId)
+    console.log("mqttPort:"+mqttPort)
+
+
+   // initMap();
+</script>
+
+
+
+
+</body>
+<!--Tab菜单右键弹出菜单-->
+
+</html>
