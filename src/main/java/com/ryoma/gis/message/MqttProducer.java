@@ -26,17 +26,10 @@ public class MqttProducer {
 
     @Scheduled(fixedDelay = 3000)
     public void send() {
-        String msg = "xx";
-        //String TOPIC = NumToStringUtil.numToString(Long.valueOf("7730596820333821952"));
+        String msg = "消息发送模拟";
         String TOPIC = NumToStringUtil.numToString(Long.valueOf("7730596820333821952"));
         if (msg != null) {
             try {
-                int random=(int)(Math.random()*10)+5;
-
-                    //106.6159268759  26.64511504280
-                    //默认经纬度
-                    //model.setLongitude(106.61572+Math.random()*0.001);
-                    //model.setLatitude(26.6436150+Math.random()*0.001);
                     //102.838215  24.95089
                    //119.405550,39.920506
                     JSONObject mqParams= new JSONObject();
