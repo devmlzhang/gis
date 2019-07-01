@@ -47,7 +47,6 @@ spring:
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
 
-################测试环境开始##################
 ####mqtt
 mqtt_url: tcp://10.2.100.54:1883
 mqtt_clientId: weirdo-cliendId
@@ -66,33 +65,8 @@ activemq:
 
 
 
-################测试环境结束##################
-
-
-################演示环境开始##################
-####mqtt
-#mqtt_url: tcp://139.9.6.82:1883
-#mqtt_clientId: weirdo-cliendId
-
-#####websocket
-#websocket_hostname: 139.9.6.82
-#websocket_port: 61614
-
-#####amq过期时间,防止积压(秒)
-#mqtt_expiration: 20
-
-#activemq:
-  #broker-url: tcp://139.9.6.82:61616
-  #user: admin
-  #password: admin
-
-################演示环境结束##################
-
 #防区半径
 safeRadius: 500
-
-#劳务管理
-labor_service_url: http://10.2.100.240:8060/api/labor/
 
 
 
