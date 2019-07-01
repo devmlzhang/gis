@@ -5,4 +5,4 @@
 ##前端技术：Layui、￼OpenLayers
 
 ##启动项目后访问路径：http://127.0.0.1:8091/hat
-## 预览 
+![image](https://github.com/devmlzhang/gis/blob/master/预览.png)
