@@ -1,6 +1,6 @@
 # gis人员定位
 
-##后端技术：Springboot、ActiveMQ、MQTT协议
+##后端技术：Springboot、ActiveMQ、MQTT协议、docker
 
 ##前端技术：Layui、￼OpenLayers
 
